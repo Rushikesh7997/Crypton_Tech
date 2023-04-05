@@ -1,0 +1,15 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "rahul",
+            "createdOn": "05-04-2023",
+            "gender": "male",
+            "dob": "07-11-2000",
+            "city": "Mumbai",
+            "state": "Maharastra",
+            "pincode": 451245,
+            "modifiedOn": "05-04-2023"
+        }
+    ]
+}

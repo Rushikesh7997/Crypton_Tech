@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "widget": "Revenue",
+            "value": "$2.047",
+            "percentage": "10%",
+            "img": ""
+        },
+        {
+            "widget": "Orders",
+            "value": "356",
+            "percentage": "10%",
+            "img": ""
+        },
+        {
+            "widget": "Dine In",
+            "value": "220",
+            "percentage": "10%",
+            "img": ""
+        },
+        {
+            "widget": "Take Away",
+            "value": "035",
+            "percentage": "5%",
+            "img": ""
+        }
+    ]
+}
