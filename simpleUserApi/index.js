@@ -25,8 +25,8 @@ app.put("/users/:id",(req,res)=>{
     let log = res.body;
     let previous = fs.readFileSync("./db.json","utf-8")
     let prev_data = JSON.parse(previous)
-    let posts = prev_data.posts;
-    let latest_values = posts.map((ele)=>{
+    let users = prev_data.users;
+    let latest_values = users.map((ele)=>{
         if(ele.id!=log.id){
             return ele;
         }
@@ -43,13 +43,13 @@ app.delete("/users/:id",(req,res)=>{
     const id = req.params.id;
     let prev_data = fs.readFileSync("./db.json","utf-8");
     let previous_data = JSON.parse(prev_data)
-    let posts = previous_data.posts;
-    let latest_data = posts.filter((ele)=>{
+    let users = previous_data.users;
+    let latest_data = users.filter((ele)=>{
         if(ele.id!=id){
             return ele;
         }
     })
-    previous_data.posts= latest_data
+    previous_data.users= latest_data
     fs.writeFileSync("./db.json",JSON.stringify(previous_data),"utf-8")
     console.log(previous_data)
     res.send("Data is deleted");
